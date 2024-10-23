@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else question</title>
+</head>
+<body>
+    <script>
+
+        let char=prompt("enter your character");
+
+        if(char>='a' && char<='z')
+    {
+        console.log("this is alphabate");
+    }
+    else if(char>='A' && char<='Z')
+    {
+        console.log("this is alphabate");
+    }
+    else
+    {
+        console.log("not alphabate");
+    }
+// -----------------------------
+    // vowel and consonant
+
+    let character=prompt("enter your character");
+
+    if(character==='a' || character==='e' || character==='i' || character==='o' || character==='u')
+    {
+        console.log("character is vowel")
+    }
+    else if((character==='A' || character==='E' || character==='I' || character==='O' || character==='U'))
+    {
+        console.log("character is vowel");
+    }
+    else
+    {
+        console.log("character is consonant");
+    }
+// ------------------------
+//     profit loss program
+
+    let cp= Number(prompt("Enter your cost price")); 
+    let sp= Number(prompt("Enter your selling price")); 
+
+    if(sp>cp)
+    {
+        let number=sp-cp;
+        console.log("profit of ",number);
+    }
+    else if(cp>sp)
+    {
+        let number=cp-sp;
+        console.log("loss of ",number); 
+    }
+    else if(cp===sp)
+    {
+        console.log("No profit no loss");
+    }
+    else
+    {
+        console.log("Please enter the correct number");
+    } 
+
+    // -------------------------
+
+    // equalateral traingle isoscales traingle scalen traingle
+
+    let side1=  Number(prompt("enter your first side")) 
+    let side2=Number(prompt("enter your second side"));
+    let side3=Number(prompt("enter your third side"));
+
+     if(side1==side2 && side2==side3) 
+    {
+        console.log("equlateral traingle");
+    }   
+   else if(side1==side2 || side1==side3 || side2==side3) 
+    {
+        console.log("isoscalen traingle");
+    }
+    else
+    {
+        console.log("scalen traingle");
+    }
+    </script>
+</body>
+</html>
